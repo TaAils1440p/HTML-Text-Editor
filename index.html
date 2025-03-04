@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button onclick="formatText('bold')">Bold</button>
+        <button onclick="formatText('italic')">Italic</button>
+        <button onclick="formatText('underline')">Underline</button>
+        <button onclick="saveText()">Save</button>
+        <label for="fileInput" class="file-label">Load File</label>
+        <input type="file" id="fileInput" onchange="loadText()" style="display: none;">
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <script src="script.js"></script>
+    <h1>(You can save by pressing "save" & load by pressing "load")</h1>
+</body>
+</html>
